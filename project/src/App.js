@@ -10,7 +10,7 @@ function App() {
     <p className="text">Welcome to my first react project!</p>
     <Webimage/>
     <Navbar/>
-    
+
     </div>
   );
 }
