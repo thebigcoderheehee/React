@@ -5,6 +5,8 @@ import { experimentalStyled as styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import Right_Section from './components/Right_Section';
+import Center_section from './components/Center_section';
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -29,10 +31,14 @@ function App() {
           </Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>xs=6</Item>
+          <Item>
+            <Center_section/>
+          </Item>
         </Grid>
         <Grid item xs>
-          <Item>xs</Item>
+          <Item>
+            <Right_Section/>
+          </Item>
         </Grid>
       </Grid>
     </Box>
